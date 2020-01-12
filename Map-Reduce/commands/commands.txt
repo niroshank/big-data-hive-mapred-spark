@@ -1,0 +1,7 @@
+yarn jar MapReduceSection/target/MapReduceSection-1.0-SNAPSHOT.jar neighbourhood.CountNumberOf365Availability listings.csv/ /ouput/q_01
+
+yarn jar MapReduceSection/target/MapReduceSection-1.0-SNAPSHOT.jar neighbourhood.RentalsByNeighbourhoodGroup listings.csv/ /ouput/q_02
+
+hdfs dfs -cat /ouput/q_01/part-r-00000
+
+hdfs dfs -cat /ouput/q_02/part-r-00000
