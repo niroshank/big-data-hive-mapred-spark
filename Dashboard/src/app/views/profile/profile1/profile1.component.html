@@ -1,261 +1,247 @@
 <!--Grid row-->
 <div class="row wow fadeIn mt-5">
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+    <!--Card-->
+    <mdb-card class="mb-4">
+      <!-- Card header -->
+      <div class="card-header text-center mb-3">
+        Avg Price of Private Room Rental by Neighbourhood Group
+      </div>
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
-    
-            <!--Card-->
-            <mdb-card class="mb-4">
-    
-                <!-- Card header -->
-                <div class="card-header text-center mb-3">
-                    Avg Price of Private Room Rental by Neighbourhood Group
-                </div>
-    
-                <!--Card content-->
-                <mdb-card-body>
-    
-                    <div style="display: block">
-                        <canvas mdbChart [chartType]="chart1Type" [datasets]="chartDatasets2" [labels]="chartLabels"
-                            [colors]="chartColors" [options]="chartOptions" [legend]="true">
-                        </canvas>
-                    </div>
-                </mdb-card-body>
-    
-            </mdb-card>
-            <!--/.Card-->
-    
+      <!--Card content-->
+      <mdb-card-body>
+        <div style="display: block">
+          <canvas
+            mdbChart
+            [chartType]="chart1Type"
+            [datasets]="chartDatasets2"
+            [labels]="chartLabels"
+            [colors]="chartColors"
+            [options]="chartOptions"
+            [legend]="true"
+          >
+          </canvas>
         </div>
-        <!--Grid column-->
-    
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
-    
-            <!--Card-->
-            <mdb-card>
-    
-                <!-- Card header -->
-                <div class="card-header text-center mb-3">
-                    The 5 Lowest Price Rentals Per Each Room Type
-                </div>
-    
-                <!--Card content-->
-                <mdb-card-body>
-    
-                    <!-- Table  -->
-                    <table class="table table-hover">
-                        <!-- Table head -->
-                        <thead class="blue-grey lighten-4">
-                            <tr>
-                                <th>#</th>
-                                <th>Host ID</th>
-                                <th>Price</th>
-                                <th>Room Type</th>
-                            </tr>
-                        </thead>
-                        <!-- Table head -->
-    
-                        <!-- Table body -->
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>114674497</td>
-                                <td>0</td>
-                                <td>Entire home/apt</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>29799617</td>
-                                <td>14</td>
-                                <td>Entire home/apt</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>75175440</td>
-                                <td>14</td>
-                                <td>Entire home/apt</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>26246430</td>
-                                <td>31</td>
-                                <td>Entire home/apt</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>73254640</td>
-                                <td>39</td>
-                                <td>Entire home/apt</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>108408404</td>
-                                <td>14</td>
-                                <td>Private room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>135044343</td>
-                                <td>15</td>
-                                <td>Private room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>13460993</td>
-                                <td>15</td>
-                                <td>Private room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>13445656</td>
-                                <td>15</td>
-                                <td>Private room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>14546560</td>
-                                <td>15</td>
-                                <td>Private room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">11</th>
-                                <td>213456565</td>
-                                <td>14</td>
-                                <td>Shared room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">12</th>
-                                <td>1667678645</td>
-                                <td>15</td>
-                                <td>Shared room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">13</th>
-                                <td>45465643</td>
-                                <td>18</td>
-                                <td>Shared room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">14</th>
-                                <td>24657009</td>
-                                <td>18</td>
-                                <td>Shared room</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">15</th>
-                                <td>196433546</td>
-                                <td>19</td>
-                                <td>Shared room</td>
-                            </tr>
-                        </tbody>
-                        <!-- Table body -->
-                    </table>
-                    <!-- Table  -->
-    
-                </mdb-card-body>
-    
-            </mdb-card>
-            <!--/.Card-->
-    
-        </div>
-        <!--Grid column-->
-    
-    </div>
-    <!--Grid row-->
-    
-    <!--Grid row-->
-    <div class="row wow fadeIn">
-    
-        <!--Grid column-->
-        <div class="col-md mb-4">
-    
-            <!--Card-->
-            <mdb-card>
-    
-                <!-- Card header -->
-                <div class="card-header text-center mb-3">
-                    Top 10 Neighbourhood Based on Average Price of Private Room
-                </div>
-    
-                <!--Card content-->
-                <mdb-card-body>
-    
-                    <!-- Table  -->
-                    <table class="table table-hover">
-                        <!-- Table head -->
-                        <thead class="blue lighten-4">
-                            <tr>
-                                <th>#</th>
-                                <th>Neighbourhood</th>
-                                <th>Average Price</th>
-                            </tr>
-                        </thead>
-                        <!-- Table head -->
-    
-                        <!-- Table body -->
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Southern Islands</td>
-                                <td>649.66</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Marina South</td>
-                                <td>419.00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Bukit Panjang</td>
-                                <td>409.44</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Jurong East</td>
-                                <td>182.25</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Downtown Core</td>
-                                <td>163.50</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Singapore River</td>
-                                <td>150.66</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>Ochard</td>
-                                <td>146.89</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>Toa Paoh</td>
-                                <td>142.78</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Bishan</td>
-                                <td>138.92</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Outram</td>
-                                <td>135.26</td>
-                            </tr>
-                        </tbody>
-                        <!-- Table body -->
-                    </table>
-                    <!-- Table  -->
-    
-                </mdb-card-body>
-    
-            </mdb-card>
-            <!--/.Card-->
-    
-        </div>
-        <!--Grid column-->
-    
-    </div>
-    <!--Grid row-->
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+    <!--Card-->
+    <mdb-card>
+      <!-- Card header -->
+      <div class="card-header text-center mb-3">
+        The 5 Lowest Price Rentals Per Each Room Type
+      </div>
+
+      <!--Card content-->
+      <mdb-card-body>
+        <!-- Table  -->
+        <table class="table table-hover">
+          <!-- Table head -->
+          <thead class="blue-grey lighten-4">
+            <tr>
+              <th>#</th>
+              <th>Host ID</th>
+              <th>Price</th>
+              <th>Room Type</th>
+            </tr>
+          </thead>
+          <!-- Table head -->
+
+          <!-- Table body -->
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>114674497</td>
+              <td>0</td>
+              <td>Entire home/apt</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>29799617</td>
+              <td>14</td>
+              <td>Entire home/apt</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>75175440</td>
+              <td>14</td>
+              <td>Entire home/apt</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>26246430</td>
+              <td>31</td>
+              <td>Entire home/apt</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>73254640</td>
+              <td>39</td>
+              <td>Entire home/apt</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>108408404</td>
+              <td>14</td>
+              <td>Private room</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>135044343</td>
+              <td>15</td>
+              <td>Private room</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>13460993</td>
+              <td>15</td>
+              <td>Private room</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>13445656</td>
+              <td>15</td>
+              <td>Private room</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>14546560</td>
+              <td>15</td>
+              <td>Private room</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>213456565</td>
+              <td>14</td>
+              <td>Shared room</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>1667678645</td>
+              <td>15</td>
+              <td>Shared room</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>45465643</td>
+              <td>18</td>
+              <td>Shared room</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>24657009</td>
+              <td>18</td>
+              <td>Shared room</td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td>196433546</td>
+              <td>19</td>
+              <td>Shared room</td>
+            </tr>
+          </tbody>
+          <!-- Table body -->
+        </table>
+        <!-- Table  -->
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!--Grid column-->
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="row wow fadeIn">
+  <!--Grid column-->
+  <div class="col-md mb-4">
+    <!--Card-->
+    <mdb-card>
+      <!-- Card header -->
+      <div class="card-header text-center mb-3">
+        Top 10 Neighbourhood Based on Average Price of Private Room
+      </div>
+
+      <!--Card content-->
+      <mdb-card-body>
+        <!-- Table  -->
+        <table class="table table-hover">
+          <!-- Table head -->
+          <thead class="blue lighten-4">
+            <tr>
+              <th>#</th>
+              <th>Neighbourhood</th>
+              <th>Average Price</th>
+            </tr>
+          </thead>
+          <!-- Table head -->
+
+          <!-- Table body -->
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Southern Islands</td>
+              <td>649.66</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Marina South</td>
+              <td>419.00</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Bukit Panjang</td>
+              <td>409.44</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Jurong East</td>
+              <td>182.25</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Downtown Core</td>
+              <td>163.50</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Singapore River</td>
+              <td>150.66</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Ochard</td>
+              <td>146.89</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Toa Paoh</td>
+              <td>142.78</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Bishan</td>
+              <td>138.92</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Outram</td>
+              <td>135.26</td>
+            </tr>
+          </tbody>
+          <!-- Table body -->
+        </table>
+        <!-- Table  -->
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!--Grid column-->
+</div>
+<!--Grid row-->

@@ -14,6 +14,7 @@ export class Profile1Component implements OnInit {
   public chart5Type:string = 'doughnut';
 
 
+  public chartLabels: Array<any> = ['label'];
   public chartType = 'line';
 
   //Q2 data
