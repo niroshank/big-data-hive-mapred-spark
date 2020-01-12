@@ -18,11 +18,11 @@ export class Profile1Component implements OnInit {
 
   //Q2 data
   public chartDatasets1: Array<any> = [
-    {data: [50], label: 'Central Region'},
-    {data: [28], label: 'East Region'},
-    {data: [38], label: 'North Region'},
-    {data: [38], label: 'North-East Region'},
-    {data: [38], label: 'West Region'}
+    {data: [114.47], label: 'Central Region'},
+    {data: [117.23], label: 'East Region'},
+    {data: [82.35], label: 'North Region'},
+    {data: [80.06], label: 'North-East Region'},
+    {data: [117.82], label: 'West Region'}
   ];
 
    //Q2 data

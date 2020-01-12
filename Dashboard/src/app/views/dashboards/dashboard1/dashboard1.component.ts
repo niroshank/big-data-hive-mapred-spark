@@ -19,11 +19,11 @@ export class Dashboard1Component implements OnInit {
 
   //Q2 data
   public chartDatasets1: Array<any> = [
-    {data: [50], label: 'Central Region'},
-    {data: [28], label: 'East Region'},
-    {data: [38], label: 'North Region'},
-    {data: [38], label: 'North-East Region'},
-    {data: [38], label: 'West Region'}
+    {data: [6309], label: 'Central Region'},
+    {data: [508], label: 'East Region'},
+    {data: [204], label: 'North Region'},
+    {data: [346], label: 'North-East Region'},
+    {data: [540], label: 'West Region'}
   ];
 
    //Q2 data

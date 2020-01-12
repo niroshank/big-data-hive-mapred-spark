@@ -1,62 +1,34 @@
 <app-stats-card></app-stats-card>
 
-
 <!--Grid row-->
 <div class="row wow fadeIn mt-5">
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+    <!--Card-->
+    <mdb-card class="mb-4">
+      <!-- Card header -->
+      <div class="card-header text-center mb-3">
+        Number of Rentals Per Neighbourhood Group
+      </div>
 
-    <!--Grid column-->
-    <div class="col-md-6 mb-4">
-
-        <!--Card-->
-        <mdb-card class="mb-4">
-
-            <!-- Card header -->
-            <div class="card-header text-center mb-3">
-                Number of Rentals Per Neighbourhood Group
-            </div>
-
-            <!--Card content-->
-            <mdb-card-body>
-
-                <div style="display: block">
-                    <canvas mdbChart [chartType]="chart1Type" [datasets]="chartDatasets1" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true">
-                    </canvas>
-                </div>
-            </mdb-card-body>
-
-        </mdb-card>
-        <!--/.Card-->
-
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-md-6 mb-4">
-
-        <!--Card-->
-        <mdb-card class="mb-4">
-
-            <!-- Card header -->
-            <div class="card-header text-center mb-3">
-                Avg Price of Private Room Rental by Neighbourhood Group
-            </div>
-
-            <!--Card content-->
-            <mdb-card-body>
-
-                <div style="display: block">
-                    <canvas mdbChart [chartType]="chart1Type" [datasets]="chartDatasets2" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true">
-                    </canvas>
-                </div>
-            </mdb-card-body>
-
-        </mdb-card>
-        <!--/.Card-->
-    
-    </div>
-    <!--Grid column-->    
-
+      <!--Card content-->
+      <mdb-card-body>
+        <div style="display: block">
+          <canvas
+            mdbChart
+            [chartType]="chart1Type"
+            [datasets]="chartDatasets1"
+            [labels]="chartLabels"
+            [colors]="chartColors"
+            [options]="chartOptions"
+            [legend]="true"
+          >
+          </canvas>
+        </div>
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!--Grid column-->
 </div>
 <!--Grid row-->

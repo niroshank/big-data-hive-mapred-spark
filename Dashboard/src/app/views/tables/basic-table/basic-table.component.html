@@ -1,127 +1,128 @@
 <!--Grid row-->
 <div class="row wow fadeIn mt-5">
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+    <!--Card-->
+    <mdb-card class="mb-4">
+      <!-- Card header -->
+      <div class="card-header text-center mb-3">
+        Percentage of Owners Who Rent More Than One Property
+      </div>
 
-    <!--Grid column-->
-    <div class="col-md-6 mb-4">
+      <!--Card content-->
+      <mdb-card-body>
+        <div style="display: block">
+          <canvas
+            mdbChart
+            [chartType]="chart2Type"
+            [datasets]="chartDatasets1"
+            [labels]="chartLabels"
+            [colors]="chartColors"
+            [options]="chartOptions"
+            [legend]="true"
+          >
+          </canvas>
+        </div>
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!--Grid column-->
 
-        <!--Card-->
-        <mdb-card class="mb-4">
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+    <!--Card-->
+    <mdb-card>
+      <!-- Card header -->
+      <div class="card-header text-center mb-3">
+        Histogram of Number of Rentals Reviewed Over Time (Based on Last Review)
+        in Month Granularity
+      </div>
 
-            <!-- Card header -->
-            <div class="card-header text-center mb-3">
-                Percentage of Owners Who Rent More Than One Property
-            </div>
-
-            <!--Card content-->
-            <mdb-card-body>
-
-                <div style="display: block">
-                    <canvas mdbChart [chartType]="chart1Type" [datasets]="chartDatasets1" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true">
-                    </canvas>
-                </div>
-            </mdb-card-body>
-
-        </mdb-card>
-        <!--/.Card-->
-
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-md-6 mb-4">
-
-        <!--Card-->
-        <mdb-card>
-
-            <!-- Card header -->
-            <div class="card-header text-center mb-3">
-                Histogram of Number of Rentals Reviewed Over Time (Based on Last Review) in Month
-                Granularity
-            </div>
-
-           <!--Card content-->
-           <mdb-card-body>
-
-                <div style="display: block">
-                    <canvas mdbChart [chartType]="chart1Type" [datasets]="chartDatasets2" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true">
-                    </canvas>
-                </div>
-            </mdb-card-body>
-
-        </mdb-card>
-        <!--/.Card-->
-
-    </div>
-    <!--Grid column-->
-
+      <!--Card content-->
+      <mdb-card-body>
+        <div style="display: block">
+          <canvas
+            mdbChart
+            [chartType]="chart1Type"
+            [datasets]="chartDatasets2"
+            [labels]="chartLabels1"
+            [colors]="chartColors"
+            [options]="chartOptions"
+            [legend]="true"
+          >
+          </canvas>
+        </div>
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!--Grid column-->
 </div>
 <!--Grid row-->
 
 <!--Grid row-->
 <div class="row wow fadeIn">
+  <!--Grid column-->
+  <div class="col-md mb-4">
+    <!--Card-->
+    <mdb-card>
+      <!-- Card header -->
+      <div class="card-header text-center mb-3">
+        Number of Rentals That are Available All 365 Days of The Year for Each
+        Neighbourhood, That are in The Neighbourhood Which Have Top 5 Average
+        Rental Prices
+      </div>
 
-    <!--Grid column-->
-    <div class="col-md mb-4">
+      <!--Card content-->
+      <mdb-card-body>
+        <!-- Table  -->
+        <table class="table table-hover">
+          <!-- Table head -->
+          <thead class="blue lighten-4">
+            <tr>
+              <th>#</th>
+              <th>Neighbourhood</th>
+              <th>Rental Count</th>
+            </tr>
+          </thead>
+          <!-- Table head -->
 
-        <!--Card-->
-        <mdb-card>
-
-            <!-- Card header -->
-            <div class="card-header text-center mb-3">
-                Number of Rentals That are Available All 365 Days of The Year for Each Neighbourhood,
-                    That are in The Neighbourhood Which Have Top 5 Average Rental Prices
-            </div>
-
-            <!--Card content-->
-            <mdb-card-body>
-
-                <!-- Table  -->
-                <table class="table table-hover">
-                    <!-- Table head -->
-                    <thead class="blue lighten-4">
-                        <tr>
-                            <th>#</th>
-                            <th>Lorem</th>
-                            <th>Ipsum</th>
-                            <th>Dolor</th>
-                        </tr>
-                    </thead>
-                    <!-- Table head -->
-
-                    <!-- Table body -->
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Cell 4</td>
-                            <td>Cell 5</td>
-                            <td>Cell 6</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Cell 7</td>
-                            <td>Cell 8</td>
-                            <td>Cell 9</td>
-                        </tr>
-                    </tbody>
-                    <!-- Table body -->
-                </table>
-                <!-- Table  -->
-
-            </mdb-card-body>
-
-        </mdb-card>
-        <!--/.Card-->
-
-    </div>
-    <!--Grid column-->
-
+          <!-- Table body -->
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Western Water</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Woodlands</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Lim Chu Kang</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Serangoon</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Bukit Panjang</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+          <!-- Table body -->
+        </table>
+        <!-- Table  -->
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!--Grid column-->
 </div>
 <!--Grid row-->
